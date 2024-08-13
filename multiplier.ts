@@ -36,3 +36,5 @@ function parseArguments(args: string[]): MultiplyValues {
     value2,
   }
 }
+
+export {}

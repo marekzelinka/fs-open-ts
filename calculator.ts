@@ -32,4 +32,4 @@ try {
   console.error(errorMessage)
 }
 
-console.log(process.argv)
+export {}
