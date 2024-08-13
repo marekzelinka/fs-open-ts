@@ -24,10 +24,12 @@ try {
   console.log('Result for 4 / 2:', calculator(4, 2, 'multiply'))
   console.log('Result for 2 / 4:', calculator(2, 4, 'divide'))
   console.log('Result for 1 / 0:', calculator(1, 0, 'divide'))
-} catch (error: unknown) {
+} catch (error) {
   let errorMessage = 'Something went wrong: '
   if (error instanceof Error) {
     errorMessage += error.message
   }
   console.error(errorMessage)
 }
+
+console.log(process.argv)
