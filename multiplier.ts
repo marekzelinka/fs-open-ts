@@ -9,7 +9,7 @@ try {
     value2,
     `Multiplied ${value1} and ${value2}, the result is:`,
   )
-} catch (error: unknown) {
+} catch (error) {
   let errorMessage = 'Something bad happend.'
   if (error instanceof Error) {
     errorMessage += ` Error: ${error.message}`

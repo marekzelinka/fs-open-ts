@@ -1,6 +1,6 @@
-type Operation = 'multiply' | 'add' | 'divide'
+export type Operation = 'multiply' | 'add' | 'divide'
 
-function calculator(a: number, b: number, op: Operation): number {
+export function calculator(a: number, b: number, op: Operation): number {
   switch (op) {
     case 'multiply': {
       return a * b
@@ -17,19 +17,3 @@ function calculator(a: number, b: number, op: Operation): number {
     }
   }
 }
-
-try {
-  console.log('Result for 8 + 10:', calculator(8, 10, 'add'))
-  console.log('Result for 1 * 5:', calculator(1, 5, 'multiply'))
-  console.log('Result for 4 / 2:', calculator(4, 2, 'multiply'))
-  console.log('Result for 2 / 4:', calculator(2, 4, 'divide'))
-  console.log('Result for 1 / 0:', calculator(1, 0, 'divide'))
-} catch (error) {
-  let errorMessage = 'Something went wrong: '
-  if (error instanceof Error) {
-    errorMessage += error.message
-  }
-  console.error(errorMessage)
-}
-
-export {}
